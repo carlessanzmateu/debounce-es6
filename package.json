@@ -1,0 +1,18 @@
+{
+  "name": "debounce-es6",
+  "version": "1.0.0",
+  "description": "debounce library written in es6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "debounce",
+    "javascript",
+    "js",
+    "es6",
+    "ES2015"
+  ],
+  "author": "@carlessanzmateu",
+  "license": "ISC"
+}
