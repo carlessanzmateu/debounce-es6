@@ -52,11 +52,11 @@ const delayTime = 300 //mms
 const isImmediate = false
 
 debounceES6.debounce(() => {
-  console.log('some foo texto to be debounced');
+  console.log('some foo text to be debounced');
 }, delayTime, isImmediate);
 
 ```
-## Debounce last stack of call (if the await time does not get acomplished between calls)
+## Debounce last stack of calls (if the await time does not get acomplished between calls)
 
 ```javascript
 
