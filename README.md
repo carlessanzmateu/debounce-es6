@@ -56,7 +56,7 @@ debounceES6.debounce(() => {
 }, delayTime, isImmediate);
 
 ```
-## Debounce last stack of call (if the await time does not get acomplished between calls)
+## Debounce last stack of calls (if the await time does not get acomplished between calls)
 
 ```javascript
 

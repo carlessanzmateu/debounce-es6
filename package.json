@@ -1,10 +1,14 @@
 {
   "name": "debounce-es6",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "debounce library written in es6",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlessanzmateu/debounce-es6"
   },
   "keywords": [
     "debounce",
