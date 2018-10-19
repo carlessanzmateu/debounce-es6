@@ -1,4 +1,4 @@
-# Debounce ES6
+<h1 style="text-align:center;">Debounce ES6</h1>
 
 Debounce library fully written in ES6
 
@@ -9,19 +9,21 @@ How to **install**:
 **Usage:**
 
 ```javascript
-
-import DebounceES6 from 'debounce-es6';
+import DebounceES6 from "debounce-es6";
 
 const debounceES6 = new DebounceES6();
 
-const delayTime = 300 //mms
-const isImmediate = false
+const delayTime = 300; //mms
+const isImmediate = false;
 
-debounceES6.debounce(() => {
-  console.log('some foo texto to be debounced');
-}, delayTime, isImmediate);
-
-````
+debounceES6.debounce(
+  () => {
+    console.log("some foo texto to be debounced");
+  },
+  delayTime,
+  isImmediate
+);
+```
 
 ## Features
 
@@ -30,6 +32,7 @@ This library is designed in order to debounce the function used as callback. The
 Also, is available to set the `new DebounceES6()` as global and the library will send just the last stack of calls in the await time.
 
 ## Api
+
 ### debounce method
 
 ```javascript
@@ -43,23 +46,25 @@ Also, is available to set the `new DebounceES6()` as global and the library will
 ## Just debounce example
 
 ```javascript
-
-import DebounceES6 from 'debounce-es6';
+import DebounceES6 from "debounce-es6";
 
 const debounceES6 = new DebounceES6();
 
-const delayTime = 300 //mms
-const isImmediate = false
+const delayTime = 300; //mms
+const isImmediate = false;
 
-debounceES6.debounce(() => {
-  console.log('some foo text to be debounced');
-}, delayTime, isImmediate);
-
+debounceES6.debounce(
+  () => {
+    console.log("some foo text to be debounced");
+  },
+  delayTime,
+  isImmediate
+);
 ```
+
 ## Debounce last stack of calls (if the await time does not get acomplished between calls)
 
 ```javascript
-
 import DebounceES6 from 'debounce-es6';
 
 const debounceES6 = new DebounceES6();
@@ -98,7 +103,6 @@ for(var i = 0; i < 5; i++) {
 
 // REAL EXPECTED OUTPUT:
 //some foo text to be debounced
-
 ```
 
 In that case, if we set during the loop `immediate` parameter as true, the output will be:

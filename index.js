@@ -1,29 +1,27 @@
 export default class DebounceES6 {
-  timeOutId = undefined
-
-  debounce(callback, wait = 0, immediate = false) {
-    this.clearTimeOutStack()
-
-    if (immediate) {
-      wait = 0
-    }
-
-    const executionTimeoutId = setTimeout(() => {
-      callback()
-    }, wait)
-
-    this.setTimeOutId(executionTimeoutId)
+  constructor() {
+    this.timeout = undefined;
   }
 
-  clearTimeOutStack() {
-    clearTimeout(this.getTimeOutId())
+  debounce(callback, wait, immediate = false) {
+    const defaultWait = 0;
+    this.clearTimeoutStack();
+
+    wait = immediate ? defaultWait : wait;
+
+    const executionTimeoutValue = setTimeout(() => callback(), wait);
+    this.setTimeoutValue(executionTimeoutValue);
   }
 
-  setTimeOutId(id) {
-    this.timeOutId = parseInt(id.toString())
+  clearTimeoutStack() {
+    clearTimeout(this.getTimeoutValue());
   }
 
-  getTimeOutId() {
-    return this.timeOutId
+  setTimeoutValue(value) {
+    this.timeout = parseInt(value.toString());
+  }
+
+  getTimeoutValue() {
+    return this.timeout;
   }
 }
