@@ -1,6 +1,6 @@
 export default class DebounceES6 {
   constructor() {
-    this.timeout = undefined;
+    this.timeoutId = undefined;
   }
 
   debounce(callback, wait, immediate = false) {
@@ -18,10 +18,10 @@ export default class DebounceES6 {
   }
 
   setTimeoutValue(value) {
-    this.timeout = parseInt(value.toString());
+    this.timeoutId = parseInt(value.toString());
   }
 
   getTimeoutValue() {
-    return this.timeout;
+    return this.timeoutId;
   }
 }
